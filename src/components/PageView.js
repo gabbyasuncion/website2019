@@ -13,7 +13,7 @@ function PageView() {
         <Switch>
           <Route
             exact
-            path={process.env.PUBLIC_URL + "/website2019/"}
+            path={process.env.PUBLIC_URL + "/"}
             component={HomePage}
           />
           <Route
