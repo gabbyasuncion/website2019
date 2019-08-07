@@ -17,7 +17,7 @@ function PageView() {
             component={HomePage}
           />
           <Route
-            path={process.env.PUBLIC_URL + "/website2019/projects"}
+            path={process.env.PUBLIC_URL + "/projects"}
             component={ProjectsView}
           />
         </Switch>

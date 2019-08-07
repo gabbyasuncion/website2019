@@ -7,11 +7,9 @@ import styled from "@emotion/styled";
 function App() {
   return (
     <Container>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path={process.env.PUBLIC_URL + "/"} component={PageView} />
-        </Switch>
-      </Router>
+      <Switch>
+        <Route path={process.env.PUBLIC_URL + "/"} component={PageView} />
+      </Switch>
     </Container>
   );
 }
