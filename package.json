@@ -2,7 +2,7 @@
   "name": "website2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gabbyasuncion.github.io/website2019",
+  "homepage": "http://gabbyasuncion.github.io/website2019/",
   "dependencies": {
     "@emotion/core": "^10.0.15",
     "@emotion/styled": "^10.0.15",
