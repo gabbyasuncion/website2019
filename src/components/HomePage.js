@@ -15,15 +15,30 @@ function HomePage() {
             i'm a rising junior at brown university studying computer science
             with a focus in design and artificial intelligence. i'm currently a
             fullstack software engineering intern at{" "}
-            <a href="https://www.goguardian.com/">GoGuardian</a>.
+            <a
+              href="https://www.goguardian.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GoGuardian
+            </a>
+            .
           </About>
           <About>
             outside of school, i dance with{" "}
-            <a href="https://www.facebook.com/attitudeatbrown/">
+            <a
+              href="https://www.facebook.com/attitudeatbrown/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               attitude dance company
             </a>
             , coordinate the{" "}
-            <a href="https://www.brown.edu/about/visit">
+            <a
+              href="https://www.brown.edu/about/visit"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               experience brown program
             </a>
             , and co-lead rogue fashion.

@@ -11,8 +11,15 @@ function PageView() {
       <Navbar />
       <ContentContainer>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/projects" component={ProjectsView} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            component={HomePage}
+          />
+          <Route
+            path={process.env.PUBLIC_URL + "/projects"}
+            component={ProjectsView}
+          />
         </Switch>
       </ContentContainer>
     </Container>
