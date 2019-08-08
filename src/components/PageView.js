@@ -4,6 +4,7 @@ import ProjectsView from "./ProjectsView";
 import styled from "@emotion/styled";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import HomePage from "./HomePage";
+import Castyr from "./projects/Castyr";
 
 function PageView() {
   return (
@@ -11,11 +12,21 @@ function PageView() {
       <Navbar />
       <ContentContainer>
         <Switch>
-          <Route exact path={process.env.PUBLIC_URL} component={HomePage} />
           <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            component={HomePage}
+          />
+          <Route
+            exact
             path={process.env.PUBLIC_URL + "/projects"}
             component={ProjectsView}
           />
+          {/* <Route
+            exact
+            path={process.env.PUBLIC_URL + "/projects/castyr"}
+            component={Castyr}
+          /> */}
         </Switch>
       </ContentContainer>
     </Container>
