@@ -51,7 +51,7 @@ function HomePage() {
 
 const Container = styled.div`
   margin-right: 300px;
-  margin-top: 200px;
+  margin-top: 180px;
   width: 900px;
   float: right;
 `;
@@ -78,6 +78,7 @@ const About = styled.div`
   a {
     color: gray;
     text-decoration: none;
+    transition: color 0.2s ease-in-out;
     &:hover {
       color: #79addc;
     }

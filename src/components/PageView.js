@@ -4,7 +4,7 @@ import ProjectsView from "./ProjectsView";
 import styled from "@emotion/styled";
 import { BrowserRouter as Switch, Route } from "react-router-dom";
 import HomePage from "./HomePage";
-import Castyr from "./projects/Castyr";
+import ProjectFrame from "./ProjectFrame";
 
 function PageView() {
   return (
@@ -22,11 +22,10 @@ function PageView() {
             path={process.env.PUBLIC_URL + "/projects"}
             component={ProjectsView}
           />
-          {/* <Route
-            exact
-            path={process.env.PUBLIC_URL + "/projects/castyr"}
-            component={Castyr}
-          /> */}
+          <Route
+            path={process.env.PUBLIC_URL + "/projects"}
+            component={ProjectFrame}
+          />
         </Switch>
       </ContentContainer>
     </Container>
@@ -35,7 +34,7 @@ function PageView() {
 
 const ContentContainer = styled.div`
   flex-grow: 1;
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: right;
 `;
 
@@ -44,10 +43,7 @@ const Container = styled.div`
   background-color: #ffee93;
   height: 100vh;
   padding-top: 40px;
-  margin-top: -16px;
-  margin-bottom: -50px;
-  margin-left: -10px;
-  margin-right: -10px;
+  width: 100hw;
 `;
 
 export default PageView;

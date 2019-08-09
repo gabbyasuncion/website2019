@@ -8,6 +8,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  background-color: #ffee93;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 code {

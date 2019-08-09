@@ -101,6 +101,8 @@ const NavLink = styled(Nav.Link)`
   color: black;
   border-left: solid 1px black;
   padding-left: 10px;
+  transition: color 0.1s ease-in-out;
+  transition: border-left 0.1s ease-in-out;
   &:hover {
     color: #79addc;
     border-left: solid 3px #79addc;
