@@ -8,7 +8,7 @@ function App() {
   return (
     <Container>
       <Switch>
-        <Route path={process.env.PUBLIC_URL + "/"} component={PageView} />
+        <Route path="/" component={PageView} />
       </Switch>
     </Container>
   );
