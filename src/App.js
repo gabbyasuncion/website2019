@@ -6,16 +6,10 @@ import styled from "@emotion/styled";
 
 function App() {
   return (
-    <Container>
-      <Switch>
-        <Route path="/" component={PageView} />
-      </Switch>
-    </Container>
+    <Switch>
+      <Route path="/" component={PageView} />
+    </Switch>
   );
 }
-
-const Container = styled.div`
-  height: 80%;
-`;
 
 export default App;

@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Button } from "antd";
+import OG from "./og-canary.png";
+import Sketch from "./sketch.jpg";
+import Sketch2 from "./sketches2.jpg";
 
 function Iterative() {
   return (
     <PageContainer>
-      <Title>/iterative</Title>
-      <ProjectSpecs>
+      <Title>Iterative Design</Title>
+      <div>
         <h2>Introduction</h2>
         This project serves as an experiment in iterative design and eye
         tracking analysis. After selecting Canary Technologies, my group decided
@@ -17,11 +20,13 @@ function Iterative() {
         goals that employee would use this software to achieve. We then used
         those goals to create a flow of control that left little room for
         confusion.
+        <img src={OG} alt="" />
         <h2>Sketches</h2>
         While sketching, each of us conceptualized one approach to the design
         but also took suggestions from each other while sketching to develop the
         idea further.
         <h3>My Sketch: Bubbles & Breadcrumbs</h3>
+        <img src={Sketch} alt="" />
         This first sketch was very focused on being easy to learn and limited in
         use. We wanted to avoid confusing employees, and tried to make something
         that minimized error. As a result, I created a simple interface with
@@ -32,6 +37,7 @@ function Iterative() {
         not necessarily learnability, as you need to select the guest to see the
         booking, amenities, and contract information, might not align best with
         the employee’s goals -- contributed to color-coding in final prototype
+        <img src={Sketch2} alt="" />
         <br />
         Universal navigation & lists (Figure 4): uses a universal navigation
         bar, could potentially confuse new employees, heavily relied on
@@ -52,7 +58,7 @@ function Iterative() {
         prototype that incorporated many of the different sketches together: the
         navigation came from sketch 1, the calendars came from sketch 4, the
         filter/search layouts came from sketch 3, and the information grid
-        layout came from sketch 2. The interactive prototype can be accessed{" "}
+        layout came from sketch 2. The interactive prototype can be accessed
         <a href="https://www.figma.com/proto/f4bIRsOei5Z3gbAo67J8wK2D/Iterative?node-id=2%3A0&scaling=scale-down">
           here
         </a>
@@ -84,44 +90,25 @@ function Iterative() {
         approaches before deciding on one. Working iteratively with a group
         provides several opportunities to reevaluate our design and fine-tune it
         to achieve the ultimate goal.
-      </ProjectSpecs>
+      </div>
     </PageContainer>
   );
 }
-
-const Link = styled.a`
-  text-decoration: none;
-  color: black;
-  font-size: 24pt;
-  margin-right: 150px;
-`;
 
 const Title = styled.div`
   font-size: 24pt;
   float: left;
   text-align: left;
-`;
-
-const ProjectSpecs = styled.div`
-  height: 550px;
-  width: 1100px;
-  background-color: #fffbe6;
-  overflow: scroll;
-  margin-top: 50px;
-  padding: 30px;
-  text-align: left;
-  font-family: "Open Sans", sans serif;
-  color: #545454;
+  font-family: "Fira Code", monospace;
 `;
 
 const PageContainer = styled.div`
-  max-width: 1000px;
-  margin: 0px 50px;
-  float: left;
+  margin: 20px 75px 60px;
+  text-align: left;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: fixed;
 `;
 
 export default Iterative;

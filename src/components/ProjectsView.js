@@ -50,7 +50,7 @@ const row2 = [
 
 function ProjectsView() {
   return (
-    <Container>
+    <React.Fragment>
       <Header>projects</Header>
       <CardContainer>
         <RowContainer>
@@ -74,7 +74,7 @@ function ProjectsView() {
           ))}
         </RowContainer>
       </CardContainer>
-    </Container>
+    </React.Fragment>
   );
 }
 
@@ -84,16 +84,19 @@ const CardContainer = styled.div`
   width: 1100px;
   margin-right: 50px;
   margin-top: 70px;
-`;
-
-const Container = styled.div`
-  margin-top: 50px;
+  @media screen and (max-width: 900px) {
+    margin: 0;
+  }
 `;
 
 const RowContainer = styled.div`
   display: flex;
   justify-content: space-around;
   margin-bottom: 70px;
+  @media screen and (max-width: 1550px) {
+    flex-direction: column;
+    margin: 0;
+  }
 `;
 
 const Header = styled.span`

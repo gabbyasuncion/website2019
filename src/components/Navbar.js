@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Github from "./github.png";
 import Medium from "./medium.png";
 import Linkedin from "./linkedin.png";
+import Resume from "./Gabriela_Asuncion.pdf";
 
 function Navbar() {
   // const handleSelect = eventKey => alert(`selected ${eventKey}`);
@@ -35,7 +36,7 @@ function Links() {
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink eventKey="3" href="/">
+          <NavLink eventKey="3" href={Resume}>
             resume
           </NavLink>
         </NavItem>
@@ -71,7 +72,7 @@ function MediaNav() {
 
 const Sidebar = styled.div`
   margin-left: 60px;
-  margin-top: 20px;
+  margin-top: 60px;
 `;
 
 const MediaLinks = styled(Nav)`

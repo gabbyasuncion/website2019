@@ -44,14 +44,16 @@ const Card = styled.div`
     margin: 30px;
   }
   background-color: #cbcddb;
+  border: 1px solid gray;
   padding: 20px;
-  box-shadow: 6px 6px grey;
   display: flex;
-  flex-direction: column;
-  transition: background-color 0.2s ease-in-out;
+  transition: transform 0.4s, background-color 0.4s, box-shadow 0.4s;
   &:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 5px 5px grey;
     background-color: #c7e5ff;
   }
+  flex-direction: column;
   position: relative;
 `;
 

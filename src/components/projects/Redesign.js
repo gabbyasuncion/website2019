@@ -5,8 +5,8 @@ import { Button } from "antd";
 function Redesign() {
   return (
     <PageContainer>
-      <Title>/redesign</Title>
-      <ProjectSpecs>
+      <Title>Interace Redesign</Title>
+      <div>
         <h2>Introduction</h2>
         This project serves as redesign for Vivi Bubble Tea's website. I mainly
         wanted to improve the site's general usability and learnability since
@@ -97,44 +97,25 @@ function Redesign() {
         something from a concept to an actual site while employing design
         concepts from UI class, art class, and my experience designing the
         newspaper.
-      </ProjectSpecs>
+      </div>
     </PageContainer>
   );
 }
-
-const Link = styled.a`
-  text-decoration: none;
-  color: black;
-  font-size: 24pt;
-  margin-right: 150px;
-`;
 
 const Title = styled.div`
   font-size: 24pt;
   float: left;
   text-align: left;
-`;
-
-const ProjectSpecs = styled.div`
-  height: 550px;
-  width: 1100px;
-  background-color: #fffbe6;
-  overflow: scroll;
-  margin-top: 50px;
-  padding: 30px;
-  text-align: left;
-  font-family: "Open Sans", sans serif;
-  color: #545454;
+  font-family: "Fira Code", monospace;
 `;
 
 const PageContainer = styled.div`
-  max-width: 1000px;
-  margin: 0px 50px;
-  float: left;
+  margin: 20px 75px 60px;
+  text-align: left;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  position: fixed;
 `;
 
 export default Redesign;

@@ -1,59 +1,70 @@
 import React from "react";
 import styled from "@emotion/styled";
+import Face from "./my-face.png";
 
 function HomePage() {
   return (
     <React.Fragment>
       <Container>
-        <Intro>>> hello world! i'm gabby :)</Intro>
-        <SubIntro>
-          i'm passionate about utilizing technology <br /> to build socially
-          impactful solutions.
-        </SubIntro>
-        <Section>
-          <About>
-            i'm a rising junior at brown university studying computer science
-            with a focus in design and artificial intelligence. i'm currently a
-            fullstack software engineering intern at{" "}
-            <a
-              href="https://www.goguardian.com/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              GoGuardian
-            </a>
-            .
-          </About>
-          <About>
-            outside of school, i dance with{" "}
-            <a
-              href="https://www.facebook.com/attitudeatbrown/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              attitude dance company
-            </a>
-            , coordinate the{" "}
-            <a
-              href="https://www.brown.edu/about/visit"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              experience brown program
-            </a>
-            , and co-lead rogue fashion.
-          </About>
-        </Section>
+        <FaceContainer>
+          <img src={Face} alt="lol" width="350px" />
+        </FaceContainer>
+        <TextContainer>
+          <Intro>>> hello world! i'm gabby :)</Intro>
+          <SubIntro>
+            i'm passionate about utilizing technology <br /> to build socially
+            impactful solutions.
+          </SubIntro>
+          <Section>
+            <About>
+              i'm a junior at brown university studying computer science with a
+              focus in design and artificial intelligence. i was formerly a
+              fullstack software engineering intern at{" "}
+              <a
+                href="https://www.goguardian.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GoGuardian
+              </a>
+              .
+            </About>
+            <About>
+              outside of school, i dance with{" "}
+              <a
+                href="https://www.facebook.com/attitudeatbrown/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                attitude dance company
+              </a>
+              , coordinate the{" "}
+              <a
+                href="https://www.brown.edu/about/visit"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                experience brown program
+              </a>
+              , and co-lead rogue fashion.
+            </About>
+          </Section>
+        </TextContainer>
       </Container>
     </React.Fragment>
   );
 }
 
-const Container = styled.div`
-  margin-right: 300px;
-  margin-top: 180px;
-  width: 900px;
+const TextContainer = styled.div`
   float: right;
+`;
+
+const Container = styled.div`
+  margin-right: 200px;
+  margin-top: 100px;
+  float: right;
+  display: flex;
+  justify-content: space-around;
 `;
 
 const Section = styled.div`
@@ -69,6 +80,12 @@ const Intro = styled.div`
 const SubIntro = styled.div`
   font-size: 14pt;
   margin-bottom: 30px;
+`;
+
+const FaceContainer = styled.div`
+  float: left;
+  padding-top: 50px;
+  padding-right: 150px;
 `;
 
 const About = styled.div`
