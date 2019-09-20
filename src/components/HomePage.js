@@ -106,7 +106,6 @@ const FaceContainer = styled.div`
     @media only screen and (max-width: 1300px) {
       max-width: 200px;
       padding-bottom: 50px;
-      padding-right: 100px;
     }
   }
   justify-content: center;
