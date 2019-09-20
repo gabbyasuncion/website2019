@@ -104,7 +104,7 @@ const FaceContainer = styled.div`
       padding-right: 200px;
     }
     @media only screen and (max-width: 1300px) {
-      max-width: 200px;
+      height: 300px;
       padding-bottom: 50px;
     }
   }
