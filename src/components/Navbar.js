@@ -5,17 +5,17 @@ import Github from "./github.png";
 import Medium from "./medium.png";
 import Linkedin from "./linkedin.png";
 import Resume from "./Gabriela_Asuncion.pdf";
+import Mail from "./mail.png";
 
 function Navbar() {
-  // const handleSelect = eventKey => alert(`selected ${eventKey}`);
   return (
-    <Sidebar style={{ width: "230px" }}>
+    <Sidebar>
       <Header>
         gabriela
         <br />
         asuncion
+        <MediaNav />
       </Header>
-      <MediaNav />
       <Links />
     </Sidebar>
   );
@@ -50,7 +50,7 @@ function MediaNav() {
     <MediaLinks>
       <Nav.Item>
         <Nav.Link href="https://github.com/gabbyasuncion" target="_blank">
-          <img src={Github} alt="lol" width="20px" />
+          <img src={Github} alt="github" width="20px" />
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
@@ -58,12 +58,17 @@ function MediaNav() {
           href="https://www.linkedin.com/in/gabriela-asuncion/"
           target="_blank"
         >
-          <img src={Linkedin} alt="lol" width="20px" />
+          <img src={Linkedin} alt="linkedin" width="20px" />
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="https://medium.com/@gabriela_asuncion" target="_blank">
-          <img src={Medium} alt="lol" width="20px" />
+          <img src={Medium} alt="medium" width="20px" />
+        </Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="mailto:gabrielaasuncion@gmail.com" target="_blank">
+          <img src={Mail} alt="mail" width="20px" />
         </Nav.Link>
       </Nav.Item>
     </MediaLinks>
@@ -73,26 +78,38 @@ function MediaNav() {
 const Sidebar = styled.div`
   margin-left: 60px;
   margin-top: 60px;
+  width: 230px;
+  @media only screen and (max-width: 800px) {
+    max-height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
 `;
 
 const MediaLinks = styled(Nav)`
   display: flex;
   justify-content: space-around;
-  margin-top: 30px;
 `;
 
-const NavWrapper = styled.div`
+const NavWrapper = styled(Nav)`
   margin-top: 20px;
   padding-left: 20px;
   width: 230px;
-  display: flex;
-  justify-content: left;
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 `;
 
 const Header = styled.div`
+  display: flex;
+  flex-direction: column;
   font-family: "Fira Code", monospace;
   font-size: 36pt;
   margin-bottom: -10px;
+  @media only screen and (max-width: 800px) {
+    float: left;
+    font-size: 24pt;
+  }
 `;
 
 const NavLink = styled(Nav.Link)`

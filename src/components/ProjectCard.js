@@ -34,11 +34,11 @@ const Description = styled.div`
 `;
 
 const Card = styled.div`
-  @media only screen and (min-width: 1550px) {
+  @media only screen and (min-width: 1000px) {
     width: 300px;
     height: 200px;
   }
-  @media only screen and (max-width: 1550px) {
+  @media only screen and (max-width: 999px) {
     width: 500px;
     height: 200px;
     margin: 30px;

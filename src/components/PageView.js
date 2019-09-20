@@ -35,6 +35,11 @@ const ContentContainer = styled.div`
 
 const Container = styled.div`
   display: flex;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   background-color: #ffee93;
 `;
 

@@ -104,6 +104,7 @@ const Title = styled.div`
 
 const PageContainer = styled.div`
   margin: 20px 75px 60px;
+  max-width: 100%;
   text-align: left;
   justify-content: center;
   font-family: "Open Sans", sans-serif;

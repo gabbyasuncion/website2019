@@ -1,16 +1,16 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Face from "./my-face.png";
+import Face from "./big-face-layered-gray.png";
 
 function HomePage() {
   return (
     <React.Fragment>
       <Container>
         <FaceContainer>
-          <img src={Face} alt="lol" width="350px" />
+          <img src={Face} alt="lol" />
         </FaceContainer>
         <TextContainer>
-          <Intro>>> hello world! i'm gabby :)</Intro>
+          <Intro>>> hello world! i'm gabby ★</Intro>
           <SubIntro>
             i'm passionate about utilizing technology <br /> to build socially
             impactful solutions.
@@ -46,7 +46,7 @@ function HomePage() {
               >
                 experience brown program
               </a>
-              , and co-lead rogue fashion.
+              , and co-lead rogue fashion group.
             </About>
           </Section>
         </TextContainer>
@@ -60,16 +60,28 @@ const TextContainer = styled.div`
 `;
 
 const Container = styled.div`
-  margin-right: 200px;
-  margin-top: 100px;
+  margin: 0 100px;
   float: right;
   display: flex;
-  justify-content: space-around;
+  @media only screen and (min-width: 1300px) {
+    margin-top: 100px;
+  }
+  @media only screen and (max-width: 1300px) {
+    flex-direction: column;
+    margin: 40px;
+  }
+  justify-content: space-between;
 `;
 
 const Section = styled.div`
-  width: 600px;
   float: right;
+  @media only screen and (min-width: 1300px) {
+    max-width: 600px;
+    margin-left: -80px;
+  }
+  @media only screen and (max-width: 1299px) {
+    max-width: 1000px;
+  }
 `;
 
 const Intro = styled.div`
@@ -84,8 +96,18 @@ const SubIntro = styled.div`
 
 const FaceContainer = styled.div`
   float: left;
-  padding-top: 50px;
-  padding-right: 150px;
+  display: flex;
+  img {
+    @media only screen and (min-width: 1300px) {
+      width: 325px;
+      padding-right: 200px;
+    }
+    @media only screen and (max-width: 1299px) {
+      width: 200px;
+      padding-bottom: 50px;
+    }
+  }
+  justify-content: center;
 `;
 
 const About = styled.div`
