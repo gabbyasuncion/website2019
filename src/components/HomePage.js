@@ -76,7 +76,7 @@ const Container = styled.div`
 const Section = styled.div`
   float: right;
   @media only screen and (min-width: 1300px) {
-    max-width: 600px;
+    max-width: 800px;
     margin-left: -80px;
   }
   @media only screen and (max-width: 1299px) {
@@ -100,11 +100,13 @@ const FaceContainer = styled.div`
   img {
     @media only screen and (min-width: 1300px) {
       width: 325px;
+      padding-top: 70px;
       padding-right: 200px;
     }
-    @media only screen and (max-width: 1299px) {
+    @media only screen and (max-width: 1300px) {
       width: 200px;
       padding-bottom: 50px;
+      padding-right: 100px;
     }
   }
   justify-content: center;
