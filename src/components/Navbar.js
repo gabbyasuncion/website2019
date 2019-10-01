@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Github from "./github.png";
 import Medium from "./medium.png";
 import Linkedin from "./linkedin.png";
-import Resume from "./Gabriela_Asuncion.pdf";
+import Resume from "./GabrielaAsuncion_Resume.pdf";
 import Mail from "./mail.png";
 
 function Navbar() {

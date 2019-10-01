@@ -12,4 +12,9 @@ function App() {
   );
 }
 
+var http = require("http");
+setInterval(function() {
+  http.get("http://hidden-atoll-53882.herokuapp.com");
+}, 300000);
+
 export default App;
